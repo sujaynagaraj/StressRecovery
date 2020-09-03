@@ -1,0 +1,23 @@
+record_id,redcap_repeat_instrument,redcap_repeat_instance,ema_1,ema_2,cou_uuid,cou_startdate,cou_enddate,cou_status,cou_supplementaldata,cou_serializedresult,cough_ema_complete,participant_id
+6,cough_ema,1,0,0,26B5B728-09EA-4B52-9681-CEFE6151398C,2020-05-14 12:20:34,2020-05-14 12:20:48,1,"{
+  ""deviceversion"" : ""13.3.1"",
+  ""deviceuuid"" : ""38CCCBD0-70CE-4613-9484-66E8F04EC827"",
+  ""devicemodel"" : ""iPhone"",
+  ""devicemanufacturer"" : ""Apple"",
+  ""deviceplatform"" : ""iOS"",
+  ""configversion"" : ""16"",
+  ""syncdate"" : ""2020-05-14 12:20:48"",
+  ""percentComplete"" : ""100"",
+  ""appversion"" : ""2.8.0""
+}",[document],0,U-Y8H7RGKHELHDXMQ5ZN48
+8,cough_ema,1,0,0,D2C8D233-7E4A-4657-BA10-51941266C28C,2020-06-03 10:25:39,2020-06-03 10:25:50,1,"{
+  ""syncdate"" : ""2020-06-03 10:25:50"",
+  ""configversion"" : ""16"",
+  ""deviceplatform"" : ""iOS"",
+  ""devicemodel"" : ""iPhone"",
+  ""deviceuuid"" : ""FA99CDE6-5BD9-48F6-82F9-59250BAB4655"",
+  ""appversion"" : ""2.8.0"",
+  ""devicemanufacturer"" : ""Apple"",
+  ""deviceversion"" : ""13.3"",
+  ""percentComplete"" : ""100""
+}",[document],0,U-6NYT9428U5XVMF376JR2

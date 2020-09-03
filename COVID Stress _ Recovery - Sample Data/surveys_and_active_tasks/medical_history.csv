@@ -1,0 +1,23 @@
+record_id,redcap_repeat_instrument,redcap_repeat_instance,med_respcond___1,med_respcond___2,med_respcond___3,med_respcond___4,med_respcond___5,med_respcond___6,med_respcond___7,med_respcond___8,med_2,med_3,med_4___1,med_4___2,med_4___3,med_4___4,med_4___5,med_4___6,med_4___7,med_4___8,med_4___9,med_4___10,med_4___11,med_4___12,med_4___13,med_4___14,med_5___1,med_5___2,med_5___3,med_5___4,med_5___5,med_5___6,med_5___7,med_5___8,med_5___9,med_5___10,med_5___11,height_7a,height_7b,med925_uuid,med925_startdate,med925_enddate,med925_status,med925_supplementaldata,med925_serializedresult,medical_history_complete,participant_id
+1,medical_history,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,,,E68772D6-00EA-41A0-AEC2-138CC2645788,2020-05-09 16:31:01,2020-05-09 16:31:25,1,"{
+  ""deviceplatform"" : ""iOS"",
+  ""deviceuuid"" : ""F65010C6-271C-4C13-8C98-E223BA95A294"",
+  ""syncdate"" : ""2020-05-09 16:31:25"",
+  ""percentComplete"" : ""100"",
+  ""configversion"" : ""15"",
+  ""appversion"" : ""2.8.0"",
+  ""devicemanufacturer"" : ""Apple"",
+  ""devicemodel"" : ""iPhone"",
+  ""deviceversion"" : ""13.3.1""
+}",[document],0,U-ED8U66WDPNSTAJ81Y4V8
+1,medical_history,2,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,5,8,12E9F6BF-A2E5-4CD1-8F5D-3CC75F112FC2,2020-05-13 14:42:30,2020-05-13 14:43:12,1,"{
+  ""percentComplete"" : ""100"",
+  ""syncdate"" : ""2020-05-13 14:43:12"",
+  ""deviceuuid"" : ""F65010C6-271C-4C13-8C98-E223BA95A294"",
+  ""devicemodel"" : ""iPhone"",
+  ""devicemanufacturer"" : ""Apple"",
+  ""deviceplatform"" : ""iOS"",
+  ""deviceversion"" : ""13.4.1"",
+  ""configversion"" : ""16"",
+  ""appversion"" : ""2.8.0""
+}",[document],0,U-ED8U66WDPNSTAJ81Y4V8

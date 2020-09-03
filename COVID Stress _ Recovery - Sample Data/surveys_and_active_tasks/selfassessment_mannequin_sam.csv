@@ -1,0 +1,12 @@
+record_id,redcap_repeat_instrument,redcap_repeat_instance,sam1,sam2,sam3,sam4,sam5,sam6,sam7,sam8,sam944_uuid,sam944_startdate,sam944_enddate,sam944_status,sam944_supplementaldata,sam944_serializedresult,selfassessment_mannequin_sam_complete,participant_id
+8,selfassessment_mannequin_sam,1,2,3,2,2,3,2,4,3,396E31A4-D51A-48E2-B100-CE61346CE1E5,2020-06-03 10:26:00,2020-06-03 10:26:18,1,"{
+  ""percentComplete"" : ""100"",
+  ""devicemodel"" : ""iPhone"",
+  ""deviceversion"" : ""13.3"",
+  ""deviceuuid"" : ""FA99CDE6-5BD9-48F6-82F9-59250BAB4655"",
+  ""appversion"" : ""2.8.0"",
+  ""configversion"" : ""16"",
+  ""syncdate"" : ""2020-06-03 10:26:18"",
+  ""deviceplatform"" : ""iOS"",
+  ""devicemanufacturer"" : ""Apple""
+}",[document],0,U-6NYT9428U5XVMF376JR2

@@ -1,0 +1,479 @@
+field_name,form_name,section_header,field_type,field_label,select_choices_or_calculations,field_note,text_validation_type_or_show_slider_number,text_validation_min,text_validation_max,identifier,branching_logic,required_field,custom_alignment,question_number,matrix_group_name,matrix_ranking,field_annotation
+record_id,participants,,text,Record ID,,,,,,,,,,,,,@MC-PARTICIPANT-ID
+par_firstname,participants,,text,First Name,,,,,,y,,,,,,,@MC-PARTICIPANT-FIRSTNAME
+par_lastname,participants,,text,Last Name,,,,,,y,,,,,,,@MC-PARTICIPANT-LASTNAME
+par_zerodate,participants,,text,Baseline Date,,,date_ymd,,,,,,,,,,@MC-PARTICIPANT-ZERODATE
+par_code,participants,,text,Code,,,,,,,,,,,,,@MC-PARTICIPANT-CODE @HIDDEN
+par_joindate,participants,,text,Install Date,,,datetime_seconds_ymd,,,,,,,,,,@MC-PARTICIPANT-JOINDATE @HIDDEN
+par_pushids,participants,,notes,Push Notification IDs,,,,,,,,,,,,,@MC-PARTICIPANT-PUSHNOTIFICATIONIDS @HIDDEN
+ace_1,adverse_childhood_events_ace,"Please answer the following 10 questions about when you were growing up, during your first 18 years of life.
+
+While you were growing up, during your first 18 years of life:",yesno,"1. Did a parent or other adult in the household OFTEN: 
+
+Swear at you, insult you, put you down, or humiliate you? 
+
+OR 
+
+Act in a way that made you afraid that you might be physically hurt?",,,,,,,,y,LH,,,,
+ace_2,adverse_childhood_events_ace,,yesno,"2. Did a parent or other adult in the household often: 
+
+Push, grab, slap, or throw something at you? 
+
+OR 
+
+Ever hit you so hard that you had marks or were injured?",,,,,,,,y,LH,,,,
+ace_3,adverse_childhood_events_ace,,yesno,"3. Did an adult or person at least 5 years older than you ever: 
+
+Touch or fondle you or have you touch their body in a sexual way? 
+
+OR 
+
+Try to or actually have oral, anal, or vaginal sex with you?",,,,,,,,y,LH,,,,
+ace_4,adverse_childhood_events_ace,,yesno,"4. Did you often feel that: 
+
+No one in your family loved you or thought you were important or special? 
+
+OR 
+
+Your family didn't look out for each other, feel close to each other, or support each other?",,,,,,,,y,LH,,,,
+ace_5,adverse_childhood_events_ace,,yesno,"5. Did you often feel that: 
+
+You didn't have enough to eat, had to wear dirty clothes, and had no one to protect you? 
+
+OR 
+
+Your parents were too drunk or high to take care of you or take you to the doctor if you needed it?",,,,,,,,y,LH,,,,
+ace_6,adverse_childhood_events_ace,,yesno,6. Were your parents ever separated or divorced?,,,,,,,,y,LH,,,,
+ace_7,adverse_childhood_events_ace,,yesno,"7. Was your mother or stepmother: 
+
+Often pushed, grabbed, slapped, or had something thrown at her? 
+
+OR 
+
+Sometimes or often kicked, bitten, hit with a fist, or hit with something hard? 
+
+OR 
+
+Ever repeatedly hit over at least a few minutes or threatened with a gun or knife?",,,,,,,,y,LH,,,,
+ace_8,adverse_childhood_events_ace,,yesno,8. Did you live with anyone who was a problem drinker or alcoholic or who used street drugs?,,,,,,,,y,LH,,,,
+ace_9,adverse_childhood_events_ace,,yesno,9. Was a household member depressed or mentally ill or did a household member attempt suicide?,,,,,,,,y,LH,,,,
+ace_10,adverse_childhood_events_ace,,yesno,10. Did a household member go to prison?,,,,,,,,y,LH,,,,
+ace_ts,adverse_childhood_events_ace,,text,Adverse Childhood Events Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+ace485_uuid,adverse_childhood_events_ace,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+ace485_startdate,adverse_childhood_events_ace,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+ace485_enddate,adverse_childhood_events_ace,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+ace485_scheduledate,adverse_childhood_events_ace,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+ace485_status,adverse_childhood_events_ace,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+ace485_supplementaldata,adverse_childhood_events_ace,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+ace485_serializedresult,adverse_childhood_events_ace,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+ema_1,cough_ema,Please answer the following 2 questions about the PAST HOUR.,text,"<div class=""rich-text-field-label""><p>1. How many times did you cough in the <span style=""text-decoration: underline;"">past hour</span>? <span style=""font-weight: normal;"">(provide a number)</span></p></div>",,,integer,0,,,,y,LH,,,,
+ema_2,cough_ema,,slider,"<div class=""rich-text-field-label""><p>2. How bothered by your cough were you in the <span style=""text-decoration: underline;"">past hour</span>?</p></div>",Not at all bothered |  | Extremely bothered,,,,,,,y,LH,,,,
+ema_ts,cough_ema,,text,Cough EMA Timestamp,,,,,,,,,,,,,@NOW @HIDDEN
+cou_uuid,cough_ema,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+cou_startdate,cough_ema,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+cou_enddate,cough_ema,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+cou_scheduledate,cough_ema,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+cou_status,cough_ema,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+cou_supplementaldata,cough_ema,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+cou_serializedresult,cough_ema,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+vas_day,cough_vas,Please answer the following 2 questions about the PAST WEEK.,slider,"<div class=""rich-text-field-label""><p>1. How severe was your cough during the <span style=""text-decoration: underline;"">day</span>?</p></div>",No coughing |  | Worst possible coughing,,,,,,,y,RH,,,,
+vas_night,cough_vas,,slider,"<div class=""rich-text-field-label""><p>2. How severe was your cough during the <span style=""text-decoration: underline;"">night</span>?</p></div>",No coughing |  | Worst possible coughing,,,,,,,y,RH,,,,
+vas_ts,cough_vas,,text,Cough VAS Timestamp,,,,,,,,,RH,,,,@TODAY @HIDDEN
+vas352_uuid,cough_vas,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+vas352_startdate,cough_vas,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+vas352_enddate,cough_vas,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+vas352_scheduledate,cough_vas,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+vas352_status,cough_vas,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+vas352_supplementaldata,cough_vas,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+vas352_serializedresult,cough_vas,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+daily_stressed,daily_stress_measure,"<div class=""rich-text-field-label""><p>Please answer the following questions about the PAST 24 HOURS. </p></div>",yesno,"<div class=""rich-text-field-label""><p>1. At any time during today did you feel <span style=""text-decoration: underline;"">very stressed</span> or <span style=""text-decoration: underline;"">extremely stressed</span>?</p></div>",,,,,,,,y,LH,,,,
+daily_timing,daily_stress_measure,,checkbox,"<div class=""rich-text-field-label""><p>2. When did these feelings of stress occur? <span style=""font-weight: normal;"">(select all that apply)</span></p></div>","1, First part of shift | 2, Last part of shift | 3, All shift | 4, Off shift | 5, All day",,,,,,[daily_stressed] = '1',y,LH,,,,
+daily_duration,daily_stress_measure,,radio,"3. In total, how long did these feelings of stress last?","0, Less than 15 minutes | 1, 1 hour | 2, 2 to 3 hours | 4, More than 4 hours | 5, All day",,,,,,[daily_stressed] = '1',y,LH,,,,
+daily_control,daily_stress_measure,,slider,4. Right now do you feel in control?,Very out of control |  | Very in control,,number,,,,[daily_stressed] = '1',y,LH,,,,
+daily_cause,daily_stress_measure,,yesno,5. Would you like to expand on the nature of your feelings and/or triggers of this stress?,,,,,,,[daily_stressed] = '1',y,LH,,,,
+daily_5a,daily_stress_measure,,notes,"5a. If yes, please indicate here:",,,,,,,[daily_cause] = '1',y,RH,,,,
+daily_reduce,daily_stress_measure,,yesno,6. Were you able to do anything today to reduce your stress?,,,,,,,[daily_stressed] = '1',y,LH,,,,
+daily_6a,daily_stress_measure,,notes,"6a. If yes, please indicate here: ",,,,,,,[daily_reduce] = '1',y,RH,,,,
+daily_shifts,daily_stress_measure,"<div class=""rich-text-field-label""><p>Please answer the following questions about the <span style=""text-decoration: underline;"">last 24 hours</span>:</p></div>",radio,"<div class=""rich-text-field-label""><p>7. <span style=""text-decoration: underline;"">In the last 24 hours</span>, how many shifts did you work?</p></div>","0, None | 1, One | 2, Two",,,,,,,y,RH,,,,
+daily_covid_shifts,daily_stress_measure,,checkbox,"<div class=""rich-text-field-label""><p>8. <span style=""text-decoration: underline;"">In the last 24 hours</span>, when were you actively caring for COVID-19 patients? <span style=""font-weight: normal;"">(can select multiple answers)</span></p></div>","1, First Shift | 2, Second Shift | 3, Did not actively care for COVID-19 patients",,,,,,[daily_shifts] = '1' or [daily_shifts] = '2',y,LH,,,,
+daily_arrive,daily_stress_measure,,text,"<div class=""rich-text-field-label""><p>9. What time did you arrive at work?</p></div>",,,time,,,,[daily_shifts] = '1' or [daily_shifts] = '2',y,RH,,,,
+daily_leave,daily_stress_measure,,text,"<div class=""rich-text-field-label""><p>10. What time did you leave work?</p></div>",,,time,,,,[daily_shifts] = '1' or [daily_shifts] = '2',y,RH,,,,
+daily_ts,daily_stress_measure,,text,Daily Stress Measure Timestamp,,,date_ymd,,,,,,RH,,,,@TODAY @HIDDEN
+daily858_uuid,daily_stress_measure,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+daily858_startdate,daily_stress_measure,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+daily858_enddate,daily_stress_measure,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+daily858_scheduledate,daily_stress_measure,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+daily858_status,daily_stress_measure,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+daily858_supplementaldata,daily_stress_measure,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+daily858_serializedresult,daily_stress_measure,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+fss_1,fatigue_severity_scale_fss9,Please select the number on the scale from 1 (strongly disagree with statement) to 7 (strongly agree with statement) that best represents your response to the following 9 statements about the PAST WEEK.,radio,1. During the PAST WEEK: My motivation was lower when I was fatigued.,"1, 1 (Strongly Disagree) | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 (Strongly Agree)",,,,,,,y,LH,,,,
+fss_2,fatigue_severity_scale_fss9,,radio,2. During the PAST WEEK: Exercise brought on my fatigue.,"1, 1 (Strongly Disagree) | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 (Strongly Agree)",,,,,,,y,LH,,,,
+fss_3,fatigue_severity_scale_fss9,,radio,3. During the PAST WEEK: I was easily fatigued.,"1, 1 (Strongly Disagree) | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 (Strongly Agree)",,,,,,,y,LH,,,,
+fss_4,fatigue_severity_scale_fss9,,radio,4. During the PAST WEEK: Fatigue interfered with my physical functioning.,"1, 1 (Strongly Disagree) | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 (Strongly Agree)",,,,,,,y,LH,,,,
+fss_5,fatigue_severity_scale_fss9,,radio,5. During the PAST WEEK: Fatigue caused frequent problems for me.,"1, 1 (Strongly Disagree) | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 (Strongly Agree)",,,,,,,y,LH,,,,
+fss_6,fatigue_severity_scale_fss9,,radio,6. During the PAST WEEK: My fatigue prevented sustained physical functioning.,"1, 1 (Strongly Disagree) | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 (Strongly Agree)",,,,,,,y,LH,,,,
+fss_7,fatigue_severity_scale_fss9,,radio,7. During the PAST WEEK: Fatigue interfered with carrying out certain duties and responsibilities.,"1, 1 (Strongly Disagree) | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 (Strongly Agree)",,,,,,,y,LH,,,,
+fss_8,fatigue_severity_scale_fss9,,radio,8. During the PAST WEEK: Fatigue was among my three most disabling symptoms.,"1, 1 (Strongly Disagree) | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 (Strongly Agree)",,,,,,,y,LH,,,,
+fss_9,fatigue_severity_scale_fss9,,radio,"9. During the PAST WEEK: Fatigue interfered with my work, family, or social life.","1, 1 (Strongly Disagree) | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 (Strongly Agree)",,,,,,,y,LH,,,,
+fss_ts,fatigue_severity_scale_fss9,,text,FSS Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+fss998_uuid,fatigue_severity_scale_fss9,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+fss998_startdate,fatigue_severity_scale_fss9,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+fss998_enddate,fatigue_severity_scale_fss9,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+fss998_scheduledate,fatigue_severity_scale_fss9,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+fss998_status,fatigue_severity_scale_fss9,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+fss998_supplementaldata,fatigue_severity_scale_fss9,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+fss998_serializedresult,fatigue_severity_scale_fss9,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+gad_1,generalized_anxiety_disorder_scale_gad7,Select the answer that best represents how often you have been bothered by any of the following 7 problems in the PAST 2 WEEKS.,radio,"(In the PAST 2 WEEKS)
+1. Feeling nervous, anxious, or on edge","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+gad_2,generalized_anxiety_disorder_scale_gad7,,radio,"(In the PAST 2 WEEKS)
+2. Not being able to stop or control worrying","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+gad_3,generalized_anxiety_disorder_scale_gad7,,radio,"(In the PAST 2 WEEKS)
+3. Worrying too much about different things","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+gad_4,generalized_anxiety_disorder_scale_gad7,,radio,"(In the PAST 2 WEEKS)
+4. Trouble relaxing","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+gad_5,generalized_anxiety_disorder_scale_gad7,,radio,"(In the PAST 2 WEEKS)
+5. Being so restless that it's hard to sit still","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+gad_6,generalized_anxiety_disorder_scale_gad7,,radio,"(In the PAST 2 WEEKS)
+6. Becoming easily annoyed or irritable","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+gad_7,generalized_anxiety_disorder_scale_gad7,,radio,"(In the PAST 2 WEEKS)
+7. Feeling afraid as if something awful might happen","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+gad_8,generalized_anxiety_disorder_scale_gad7,,radio,"8. If you checked off any problems above, how difficult have they made it for you to do your work, take care of things at home, or get along with people? ","0, Not difficult at all | 1, Somewhat difficult | 2, Very difficult | 3, Extremely difficult",,,,,,,,LH,,,,
+gad_ts,generalized_anxiety_disorder_scale_gad7,,text,GAD-7 Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+gad145_uuid,generalized_anxiety_disorder_scale_gad7,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+gad145_startdate,generalized_anxiety_disorder_scale_gad7,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+gad145_enddate,generalized_anxiety_disorder_scale_gad7,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+gad145_scheduledate,generalized_anxiety_disorder_scale_gad7,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+gad145_status,generalized_anxiety_disorder_scale_gad7,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+gad145_supplementaldata,generalized_anxiety_disorder_scale_gad7,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+gad145_serializedresult,generalized_anxiety_disorder_scale_gad7,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+lec_01,life_events_checklist_10item,Below are questions about a number of events that commonly happen in people's lives. Each question is concerned with whether an event has happened to you (and in some cases your spouse) during the <u>last 12 months<u>:,yesno,"<div class=""rich-text-field-label""><p>1. Have you moved during the last 12 months?</p></div>",,,,,,,,y,,,,,
+lec_01a,life_events_checklist_10item,,radio,"<div class=""rich-text-field-label""><p>1a. Overall, would you say that your moving was a good or bad experience?</p></div>","0, Very Good | 1, Moderately Good | 2, Slightly Good | 3, Slightly Bad | 4, Moderately Bad | 5, Very Bad",,,,,,[lec_01] = '1',y,,,,,
+lec_02,life_events_checklist_10item,,yesno,"<div class=""rich-text-field-label""><p>2. Have you broken off an engagement to be married, ended an intimate relationship, or separated or divorced from your spouse during the last 12 months?</p></div>",,,,,,,,y,,,,,
+lec_02a,life_events_checklist_10item,,radio,"<div class=""rich-text-field-label""><p>2a. How would you rate your feelings about breaking up?</p></div>","0, Very Good | 1, Moderately Good | 2, Slightly Good | 3, Slightly Bad | 4, Moderately Bad | 5, Very Bad",,,,,,[lec_02] = '1',y,,,,,
+lec_03,life_events_checklist_10item,,yesno,"<div class=""rich-text-field-label""><p>3. Did someone you were close to die in the last 12 months?</p></div>",,,,,,,,y,,,,,
+lec_04,life_events_checklist_10item,,yesno,"<div class=""rich-text-field-label""><p>4. Have you had any important relationship, for example, with your spouse, a close friend, your boss, or a family member become significantly worse during the last 12 months?</p></div>",,,,,,,,y,,,,,
+lec_05,life_events_checklist_10item,,yesno,"<div class=""rich-text-field-label""><p>5. Have you, a very close friend, or a close family member been hospitalized for a serious (life-threatening) illness during the last 12 months?</p></div>",,,,,,,,y,,,,,
+lec_05a,life_events_checklist_10item,,checkbox,"<div class=""rich-text-field-label""><p>5a. Who? <span style=""font-weight: normal;"">(more than one response is possible)</span></p></div>","1, You | 2, Spouse/Partner | 3, Child | 4, Parent | 5, Spouse's Parent | 6, Brother or Sister | 7, Friend | 8, Other",,,,,,[lec_05] = '1',y,,,,,
+lec_06,life_events_checklist_10item,,yesno,"<div class=""rich-text-field-label""><p>6. Have you or your spouse/partner lost or changed jobs or been involuntarily unemployed during the last 12 months?</p></div>",,,,,,,,y,,,,,
+lec_06a,life_events_checklist_10item,,radio,"<div class=""rich-text-field-label""><p>6a. Who?</p></div>","1, You | 2, Spouse/Partner | 3, Both",,,,,,[lec_06] = '1',y,,,,,
+lec_06b,life_events_checklist_10item,,radio,"<div class=""rich-text-field-label""><p>6b. How would you rate your feelings about leaving your job? (or your spouse leaving his/her job)</p></div>","0, Very Good | 1, Moderately Good | 2, Slightly Good | 3, Slightly Bad | 4, Moderately Bad | 5, Very Bad",,,,,,[lec_06] = '1',y,,,,,
+lec_07,life_events_checklist_10item,,yesno,"<div class=""rich-text-field-label""><p>7. Has your house been broken into and/or burgled during the last 12 months?</p></div>",,,,,,,,y,,,,,
+lec_08,life_events_checklist_10item,,yesno,"<div class=""rich-text-field-label""><p>8. Have you or your spouse/partner or other member of your immediate family been assaulted or mugged during the last 12 months?</p></div>",,,,,,,,y,,,,,
+lec_08a,life_events_checklist_10item,,checkbox,"<div class=""rich-text-field-label""><p>8a. Who? <span style=""font-weight: normal;"">(more than one response is possible)<br /></span></p></div>","1, You | 2, Spouse/Partner | 3, Child | 4, Parent | 5, Spouse's Parent | 6, Brother or Sister | 7, Friend | 8, Other",,,,,,[lec_08] = '1',y,,,,,
+lec_09,life_events_checklist_10item,,yesno,"<div class=""rich-text-field-label""><p>9. Have you had a pet (animal) to whom you were attached die, or get lost, or did you have to give away during the last 12 months?</p></div>",,,,,,,,y,,,,,
+lec_10,life_events_checklist_10item,,yesno,"<div class=""rich-text-field-label""><p>10. Other than the events we have already asked about, have any other important things happened to you or to a very close friend or close family member in the last 12 months that made that period significantly different from a typical year?</p></div>",,,,,,,,y,,,,,
+lec_10a,life_events_checklist_10item,,notes,"<div class=""rich-text-field-label""><p>10a. Please list the event here (can include more than one if applicable):</p></div>",,,,,,,[lec_10] = '1',y,,,,,
+lec_10b,life_events_checklist_10item,,radio,"<div class=""rich-text-field-label""><p>10b. How would you rate your feelings about this event?</p></div>","0, Very Good | 1, Moderately Good | 2, Slightly Good | 3, Slightly Bad | 4, Moderately Bad | 5, Very Bad",,,,,,[lec_10] = '1',y,,,,,
+lifeevents_ts,life_events_checklist_10item,,text,Life Events Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+lec204_uuid,life_events_checklist_10item,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+lec204_startdate,life_events_checklist_10item,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+lec204_enddate,life_events_checklist_10item,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+lec204_scheduledate,life_events_checklist_10item,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+lec204_status,life_events_checklist_10item,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+lec204_supplementaldata,life_events_checklist_10item,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+lec204_serializedresult,life_events_checklist_10item,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+med_respcond,medical_history,Please complete these 6 questions about your medical history.,checkbox,"1. Do you have any breathing-related conditions? (select all that apply, scroll down to view all options)","1, Chronic Obstructive Pulmonary Disease (COPD) | 2, Asthma | 3, Influenza | 4, Common Cold | 5, COVID-19 | 6, Allergies or Hay Fever | 7, Other | 8, None",,,,,,,y,,,,,
+med_1a,medical_history,,text,"1a. If other, please specify here: ",,,,,,,[med_respcond(7)] = '1',y,,,,,
+med_2,medical_history,,yesno,2. Have you been hospitalized in the PAST YEAR because of conditions related to breathing?,,,,,,,,y,LV,,,,
+med_3,medical_history,,yesno,3. Have you taken any medications in the PAST 6 MONTHS for conditions related to breathing?,,,,,,,,y,LV,,,,
+med_3a,medical_history,,notes,"3a. If yes, please indicate the medication(s) here:",,,,,,,[med_3] = '1',,LV,,,,
+med_4,medical_history,,checkbox,"4. Have you ever had any of the following physical health conditions or problems? (select all that apply, scroll down to view all options)","1, I don't have any physical health problems | 2, Diabetes | 3, Obesity | 4, Heart disease, circulation, or blood pressure problems | 5, Lung or breathing problems (e.g. asthma) | 6, Arthritic or rheumatic problems | 7, Kidney disease | 8, Liver disease | 9, Allergies | 10, Chronic pain (e.g. headache, back) | 11, Digestive system problems (e.g. ulcer, IBS, colitis) | 12, Ear, nose, or throat problems | 13, Neurological problems (e.g. epilepsy) | 14, Other",,,,,,,y,,,,,
+med_4a,medical_history,,text,"4a. If other, please specify here: ",,,,,,,[med_4(14)] = '1',y,,,,,
+med_5,medical_history,,checkbox,"5. Have you ever been diagnosed with any of the following mental health conditions or learning problems? (select all that apply, scroll down to view all options)","1, I have never been diagnosed with a mental health condition or learning disability | 2, Mood disorder (e.g. Depression, Dysthymia, Bipolar disorder) | 3, Anxiety disorder (e.g. PTSD, OCD, Panic Disorder, Simple Phobia, Social Phobia, Generalized Anxiety Disorder, Agoraphobia) | 4, Psychotic Disorder (e.g. Schizophrenia) | 5, Eating Disorder (e.g. Bulimia Nervosa, Anorexia Nervosa, Binge Eating Disorder) | 6, Neurodevelopmental Disorder (e.g. Autism, Asperger's, ADHD) | 7, Sleep Disorder (e.g. Insomnia) | 8, Suicidal Ideation/Attempt | 9, Learning Disability | 10, Other | 11, Prefer not to answer",,,,,,,y,,,,,
+med_5a,medical_history,,text,"5a. If other, please specify here: ",,,,,,,[med_5(10)] = '1',y,,,,,
+med_6,medical_history,,notes,6. Do you currently take medications for any of the listed physical or mental health conditions? Please list here:,,,,,,,,,,,,,
+height_7a,medical_history,,text,7a. How tall are you? (please enter the feet here),,,,,,,,y,,,,,
+height_7b,medical_history,,text,7b. How tall are you? (please enter the inches here),,,,,,,,,,,,,
+med_ts,medical_history,,text,Medical History Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+med925_uuid,medical_history,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+med925_startdate,medical_history,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+med925_enddate,medical_history,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+med925_scheduledate,medical_history,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+med925_status,medical_history,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+med925_supplementaldata,medical_history,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+med925_serializedresult,medical_history,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+ongoing_1,ongoing_covid19_risk,,yesno,1. Have you been hospitalized in the PAST 2 WEEKS?,,,,,,,,y,LH,,,,
+ongoing_1a,ongoing_covid19_risk,,yesno,1a. Have you required breathing support in the PAST 2 WEEKS?,,,,,,,[ongoing_1] = '1',y,LH,,,,
+ongoing_1b,ongoing_covid19_risk,,yesno,1b. Have you needed a breathing tube in the PAST 2 WEEKS?,,,,,,,[ongoing_1] = '1',y,LH,,,,
+ongoing_2,ongoing_covid19_risk,,yesno,2. Have you had a laboratory test for COVID-19?,,,,,,,,y,LH,,,,
+ongoing_2a,ongoing_covid19_risk,,text,2a. When?,,,date_mdy,,,,[ongoing_2] = '1',y,RH,,,,
+ongoing_2b,ongoing_covid19_risk,,radio,2b. What were the results of that test?,"1, Positive | 2, Negative | 3, Not yet returned | 4, Inconclusive",,,,,,[ongoing_2] = '1',y,,,,,
+ongoing_3,ongoing_covid19_risk,,checkbox,3. Do you have any of the following? (select all that apply),"1, Fever | 2, Cough | 3, Runny nose | 4, Sore throat | 5, Diarrhea | 6, Difficulty breathing (Seek appropriate medical care or call 911 if symptoms present.) | 7, Loss of smell or taste | 8, Other | 9, None of the above",,,,,,,y,,,,,
+ongoing_3a,ongoing_covid19_risk,,notes,"3a. If other, please list your symptom(s):",,,,,,,[ongoing_3(8)] = '1',y,,,,,
+ongoing_3b,ongoing_covid19_risk,,text,"3b. If fever, enter your highest temperature: (if known)",,,number,,,,[ongoing_3(1)] = '1',,RH,,,,
+ongoing_3c,ongoing_covid19_risk,,notes,"3c. If difficulty breathing, please describe:",,,,,,,[ongoing_3(6)] = '1',,,,,,
+get_help,ongoing_covid19_risk,,descriptive,Seek appropriate medical care or call 911. ,,,,,,,[ongoing_3(1)] = '1' or [ongoing_3(2)] = '1' or [ongoing_3(3)] = '1' or [ongoing_3(4)] = '1' or [ongoing_3(5)] = '1' or [ongoing_3(6)] = '1' or [ongoing_3(7)] = '1',,,,,,
+ongoing_ts,ongoing_covid19_risk,,text,Ongoing Risk Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+lab459_uuid,ongoing_covid19_risk,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+lab459_startdate,ongoing_covid19_risk,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+lab459_enddate,ongoing_covid19_risk,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+lab459_scheduledate,ongoing_covid19_risk,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+lab459_status,ongoing_covid19_risk,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+lab459_supplementaldata,ongoing_covid19_risk,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+lab459_serializedresult,ongoing_covid19_risk,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+phq9_1,patient_health_questionnaire_phq9,Please select the answer that best represents how often you have been bothered by any of the following 9 problems over the <u>last 2 weeks</u>:,radio,"Over the PAST 2 WEEKS:
+1. Little interest or pleasure in doing things","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+phq9_2,patient_health_questionnaire_phq9,,radio,"Over the PAST 2 WEEKS:
+2. Feeling down, depressed, or hopeless","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+phq9_3,patient_health_questionnaire_phq9,,radio,"Over the PAST 2 WEEKS:
+3. Trouble falling or staying asleep, or sleeping too much","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+phq9_4,patient_health_questionnaire_phq9,,radio,"Over the PAST 2 WEEKS:
+4. Feeling tired or having little energy","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+phq9_5,patient_health_questionnaire_phq9,,radio,"Over the PAST 2 WEEKS:
+5. Poor appetite or overeating","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+phq9_6,patient_health_questionnaire_phq9,,radio,"Over the PAST 2 WEEKS:
+6. Feeling bad about yourself or that you are a failure or have let yourself or your family down","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+phq9_7,patient_health_questionnaire_phq9,,radio,"Over the PAST 2 WEEKS:
+7. Trouble concentrating on things, such as reading the newspaper or watching television","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+phq9_8,patient_health_questionnaire_phq9,,radio,"Over the PAST 2 WEEKS:
+8. Moving or speaking so slowly that other people could have noticed or the opposite - being so fidgety or restless that you have been moving around a lot more than usual","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+phq9_9,patient_health_questionnaire_phq9,,radio,"Over the PAST 2 WEEKS:
+9. Thoughts that you would be better off dead or of hurting yourself in some way","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",,,,,,,y,LH,,,,
+phq9_10,patient_health_questionnaire_phq9,,radio,"10. If you checked off any problems above, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?","0, Not difficult at all | 1, Somewhat difficult | 2, Very difficult | 3, Extremely difficult",,,,,,,,LH,,,,
+phq9_ts,patient_health_questionnaire_phq9,,text,PHQ-9 Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+phq9877_uuid,patient_health_questionnaire_phq9,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+phq9877_startdate,patient_health_questionnaire_phq9,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+phq9877_enddate,patient_health_questionnaire_phq9,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+phq9877_scheduledate,patient_health_questionnaire_phq9,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+phq9877_status,patient_health_questionnaire_phq9,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+phq9877_supplementaldata,patient_health_questionnaire_phq9,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+phq9877_serializedresult,patient_health_questionnaire_phq9,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+promis_es1,promis_emotional_support,Please select the most appropriate response to the following 4 statements about your available emotional support:,radio,1. I have someone who will listen to me when I need to talk.,"1, Never | 2, Rarely | 3, Sometimes | 4, Usually | 5, Always",,,,,,,y,LH,,,,
+promis_es2,promis_emotional_support,,radio,2. I have someone to confide in or talk to about myself or my problems.,"1, Never | 2, Rarely | 3, Sometimes | 4, Usually | 5, Always",,,,,,,y,LH,,,,
+promis_es3,promis_emotional_support,,radio,3. I have someone who makes me feel appreciated.,"1, Never | 2, Rarely | 3, Sometimes | 4, Usually | 5, Always",,,,,,,y,LH,,,,
+promis_es4,promis_emotional_support,,radio,4. I have someone to talk with when I have a bad day.,"1, Never | 2, Rarely | 3, Sometimes | 4, Usually | 5, Always",,,,,,,y,LH,,,,
+promis_es_ts,promis_emotional_support,,text,PROMIS Emotional Support Timestamp,"1, @TODAY @HIDDEN",,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+promis825_uuid,promis_emotional_support,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+promis825_startdate,promis_emotional_support,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+promis825_enddate,promis_emotional_support,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+promis825_scheduledate,promis_emotional_support,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+promis825_status,promis_emotional_support,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+promis825_supplementaldata,promis_emotional_support,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+promis825_serializedresult,promis_emotional_support,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+promis_global1,promis_global10,"Please answer the following 10 questions about your overall health:
+",radio,"1. In general, would you say your health is:","5, Excellent | 4, Very Good | 3, Good | 2, Fair | 1, Poor",,,,,,,y,LH,,,,
+promis_global2,promis_global10,,radio,"2. In general, would you say your quality of life is:","5, Excellent | 4, Very Good | 3, Good | 2, Fair | 1, Poor",,,,,,,y,LH,,,,
+promis_global3,promis_global10,,radio,"3. In general, how would you rate your physical health?","5, Excellent | 4, Very Good | 3, Good | 2, Fair | 1, Poor",,,,,,,y,LH,,,,
+promis_global4,promis_global10,,radio,"4. In general, how would you rate your mental health, including your mood and your ability to think?","5, Excellent | 4, Very Good | 3, Good | 2, Fair | 1, Poor",,,,,,,y,LH,,,,
+promis_global5,promis_global10,,radio,"5. In general, how would you rate your satisfaction with your social activities and relationships?","5, Excellent | 4, Very Good | 3, Good | 2, Fair | 1, Poor",,,,,,,y,LH,,,,
+promis_global6,promis_global10,,radio,"6. In general, please rate how well you carry out your usual social activities and roles. (includes activities at home, at work, in your community, responsibilities as a parent, child, spouse, employee, friend, etc.)","5, Excellent | 4, Very Good | 3, Good | 2, Fair | 1, Poor",,,,,,,y,LH,,,,
+promis_global7,promis_global10,,radio,"7. To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?","5, Completely | 4, Mostly | 3, Moderately | 2, A Little | 1, Not At All",,,,,,,y,LH,,,,
+promis_global8,promis_global10,,radio,"8. In the PAST 7 DAYS: How often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?","5, Never | 4, Rarely | 3, Sometimes | 2, Often | 1, Always",,,,,,,y,LH,,,,
+promis_global9,promis_global10,,radio,9. In the PAST 7 DAYS: How would you rate your fatigue on average?,"5, None | 4, Mild | 3, Moderate | 2, Severe | 1, Very Severe",,,,,,,y,LH,,,,
+promis_global10,promis_global10,,radio,10. In the PAST 7 DAYS: How would you rate your pain on average using this 10 point scale?,"0, 0 (No pain) | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 (Worst imaginable pain)",,,,,,,y,LH,,,,
+promis_global_ts,promis_global10,,text,PROMIS Global Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+promis397_uuid,promis_global10,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+promis397_startdate,promis_global10,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+promis397_enddate,promis_global10,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+promis397_scheduledate,promis_global10,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+promis397_status,promis_global10,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+promis397_supplementaldata,promis_global10,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+promis397_serializedresult,promis_global10,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+promis_sd1,promis_sleep_disturbance_sd,"<div class=""rich-text-field-label""><p>Select the answer to each of the following 5 statements that represents your sleep quality over the <span style=""text-decoration: underline;"">past 7 days</span>:</p></div>",radio,1. Over the PAST 7 DAYS: My sleep was refreshing.,"5, Not at all | 4, A little bit | 3, Somewhat | 2, Quite a bit | 1, Very much",,,,,,,y,LH,,,,
+promis_sd2,promis_sleep_disturbance_sd,,radio,2. Over the PAST 7 DAYS: I had trouble staying asleep.,"1, Not at all | 2, A little bit | 3, Somewhat | 4, Quite a bit | 5, Very much",,,,,,,y,LH,,,,
+promis_sd3,promis_sleep_disturbance_sd,,radio,3. Over the PAST 7 DAYS: I had a problem with my sleep.,"1, Not at all | 2, A little bit | 3, Somewhat | 4, Quite a bit | 5, Very much",,,,,,,y,LH,,,,
+promis_sd4,promis_sleep_disturbance_sd,,radio,4. Over the PAST 7 DAYS: I had difficulty falling asleep.,"1, Not at all | 2, A little bit | 3, Somewhat | 4, Quite a bit | 5, Very much",,,,,,,y,LH,,,,
+promis_sd5,promis_sleep_disturbance_sd,,radio,5. Over the PAST 7 DAYS: My sleep quality was ...,"5, Very poor | 4, Poor | 3, Fair | 2, Good | 1, Very good",,,,,,,y,LH,,,,
+promis_sd_ts,promis_sleep_disturbance_sd,,text,PROMIS SD Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+promis353_uuid,promis_sleep_disturbance_sd,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+promis353_startdate,promis_sleep_disturbance_sd,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+promis353_enddate,promis_sleep_disturbance_sd,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+promis353_scheduledate,promis_sleep_disturbance_sd,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+promis353_status,promis_sleep_disturbance_sd,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+promis353_supplementaldata,promis_sleep_disturbance_sd,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+promis353_serializedresult,promis_sleep_disturbance_sd,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+promis_sri1,promis_sleeprelated_impairment_sri,"<div class=""rich-text-field-label""><p>Select the response to the following 8 statements that represents your experience over the <span style=""text-decoration: underline;"">past 7 days</span>:</p></div>",radio,1. Over the PAST 7 DAYS: I was sleepy during the daytime.,"1, Not at all | 2, A little bit | 3, Somewhat | 4, Quite a bit | 5, Very much",,,,,,,y,LH,,,,
+promis_sri2,promis_sleeprelated_impairment_sri,,radio,2. Over the PAST 7 DAYS: I had trouble staying awake during the day.,"1, Not at all | 2, A little bit | 3, Somewhat | 4, Quite a bit | 5, Very much",,,,,,,y,LH,,,,
+promis_sri3,promis_sleeprelated_impairment_sri,,radio,3. Over the PAST 7 DAYS: I had a hard time getting things done because I was sleepy.,"1, Not at all | 2, A little bit | 3, Somewhat | 4, Quite a bit | 5, Very much",,,,,,,y,LH,,,,
+promis_sri4,promis_sleeprelated_impairment_sri,,radio,4. Over the PAST 7 DAYS: I felt tired.,"1, Not at all | 2, A little bit | 3, Somewhat | 4, Quite a bit | 5, Very much",,,,,,,y,LH,,,,
+promis_sri5,promis_sleeprelated_impairment_sri,,radio,5. Over the PAST 7 DAYS: I had problems during the day because of poor sleep.,"1, Not at all | 2, A little bit | 3, Somewhat | 4, Quite a bit | 5, Very much",,,,,,,y,LH,,,,
+promis_sri6,promis_sleeprelated_impairment_sri,,radio,6. Over the PAST 7 DAYS: I had a hard time concentrating because of poor sleep.,"1, Not at all | 2, A little bit | 3, Somewhat | 4, Quite a bit | 5, Very much",,,,,,,y,LH,,,,
+promis_sri7,promis_sleeprelated_impairment_sri,,radio,7. Over the PAST 7 DAYS: I felt irritable because of poor sleep.,"1, Not at all | 2, A little bit | 3, Somewhat | 4, Quite a bit | 5, Very much",,,,,,,y,LH,,,,
+promis_sri8,promis_sleeprelated_impairment_sri,,radio,8. Over the PAST 7 DAYS: I felt alert when I woke up.,"5, Not at all | 4, A little bit | 3, Somewhat | 2, Quite a bit | 1, Very much",,,,,,,y,LH,,,,
+promis_sri_ts,promis_sleeprelated_impairment_sri,,text,PROMIS SRI Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+promis845_uuid,promis_sleeprelated_impairment_sri,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+promis845_startdate,promis_sleeprelated_impairment_sri,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+promis845_enddate,promis_sleeprelated_impairment_sri,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+promis845_scheduledate,promis_sleeprelated_impairment_sri,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+promis845_status,promis_sleeprelated_impairment_sri,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+promis845_supplementaldata,promis_sleeprelated_impairment_sri,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+promis845_serializedresult,promis_sleeprelated_impairment_sri,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+pss4_1,perceived_stress_scale_pss4,Select the answer to each of the following 4 questions that best represents how often you felt that way during the <u>last week<u>:,radio,"1. In the PAST WEEK, how often have you felt that you were unable to control the important things in your life?","0, Never | 1, Almost Never | 2, Sometimes | 3, Fairly Often | 4, Very Often",,,,,,,y,LH,,,,
+pss4_2,perceived_stress_scale_pss4,,radio,"2. In the PAST WEEK, how often have you felt confident about your ability to handle your personal problems?","4, Never | 3, Almost Never | 2, Sometimes | 1, Fairly Often | 0, Very Often",,,,,,,y,LH,,,,
+pss4_3,perceived_stress_scale_pss4,,radio,"3. In the PAST WEEK, how often have you felt that things were going your way?","4, Never | 3, Almost Never | 2, Sometimes | 1, Fairly Often | 0, Very Often",,,,,,,y,LH,,,,
+pss4_4,perceived_stress_scale_pss4,,radio,"4. In the PAST WEEK, how often have you felt difficulties were piling up so high that you could not overcome them?","0, Never | 1, Almost Never | 2, Sometimes | 3, Fairly Often | 4, Very Often",,,,,,,y,LH,,,,
+pss4_ts,perceived_stress_scale_pss4,,text,PSS-4 Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+pss4557_uuid,perceived_stress_scale_pss4,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+pss4557_startdate,perceived_stress_scale_pss4,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+pss4557_enddate,perceived_stress_scale_pss4,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+pss4557_scheduledate,perceived_stress_scale_pss4,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+pss4557_status,perceived_stress_scale_pss4,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+pss4557_supplementaldata,perceived_stress_scale_pss4,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+pss4557_serializedresult,perceived_stress_scale_pss4,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+rand_1,rand_36item_short_form_health_survey,Please complete the following monthly health survey.,radio,"1. In general, would you say your health is:","100, Excellent | 75, Very good | 50, Good | 25, Fair | 0, Poor",,,,,,,y,LH,,,,
+rand_2,rand_36item_short_form_health_survey,,radio,"2. Compared to one year ago, how would your rate your health in general now?","100, Much better now than one year ago | 75, Somewhat better now than one year ago | 50, About the same | 25, Somewhat worse now than one year ago | 0, Much worse now than one year ago",,,,,,,y,,,,,
+rand_3,rand_36item_short_form_health_survey,"<div class=""rich-text-field-label""><div class=""rich-text-field-label""> <p>The following items are about activities you might do during a typical day. Does <span style=""text-decoration: underline;"">your health now limit you</span> in these activities? If so, how much?</p> </div></div>",radio,"Does your health now limit you in activities that you might do during a typical day? If so, how much?
+
+3. Vigorous activities, such as running, lifting heavy objects, participating in strenuous sports
+","0, Yes - Limited a lot | 50, Yes - Limited a little | 100, No - Not limited at all",,,,,,,y,,,,,
+rand_4,rand_36item_short_form_health_survey,,radio,"Does your health now limit you in activities that you might do during a typical day? If so, how much? 
+
+4. Moderate activities, such as moving a table, pushing a vacuum cleaner, bowling, or playing golf","0, Yes - Limited a lot | 50, Yes - Limited a little | 100, No - Not limited at all",,,,,,,y,,,,,
+rand_5,rand_36item_short_form_health_survey,,radio,"Does your health now limit you in activities that you might do during a typical day? If so, how much? 
+
+5. Lifting or carrying groceries","0, Yes - Limited a lot | 50, Yes - Limited a little | 100, No - Not limited at all",,,,,,,y,,,,,
+rand_6,rand_36item_short_form_health_survey,,radio,"Does your health now limit you in activities that you might do during a typical day? If so, how much? 
+
+6. Climbing several flights of stairs","0, Yes - Limited a lot | 50, Yes - Limited a little | 100, No - Not limited at all",,,,,,,y,,,,,
+rand_7,rand_36item_short_form_health_survey,,radio,"Does your health now limit you in activities that you might do during a typical day? If so, how much? 
+
+7. Climbing one flight of stairs","0, Yes - Limited a lot | 50, Yes - Limited a little | 100, No - Not limited at all",,,,,,,y,,,,,
+rand_8,rand_36item_short_form_health_survey,,radio,"Does your health now limit you in activities that you might do during a typical day? If so, how much? 
+
+8. Bending, kneeling, or stooping","0, Yes - Limited a lot | 50, Yes - Limited a little | 100, No - Not limited at all",,,,,,,y,,,,,
+rand_9,rand_36item_short_form_health_survey,,radio,"Does your health now limit you in activities that you might do during a typical day? If so, how much? 
+
+9. Walking more than a mile","0, Yes - Limited a lot | 50, Yes - Limited a little | 100, No - Not limited at all",,,,,,,y,,,,,
+rand_10,rand_36item_short_form_health_survey,,radio,"Does your health now limit you in activities that you might do during a typical day? If so, how much? 
+
+10. Walking several blocks","0, Yes - Limited a lot | 50, Yes - Limited a little | 100, No - Not limited at all",,,,,,,y,,,,,
+rand_11,rand_36item_short_form_health_survey,,radio,"Does your health now limit you in activities that you might do during a typical day? If so, how much?  
+
+11. Walking one block","0, Yes - Limited a lot | 50, Yes - Limited a little | 100, No - Not limited at all",,,,,,,y,,,,,
+rand_12,rand_36item_short_form_health_survey,,radio,"Does your health now limit you in activities that you might do during a typical day? If so, how much? 
+
+12. Bathing or dressing yourself","0, Yes - Limited a lot | 50, Yes - Limited a little | 100, No - Not limited at all",,,,,,,y,,,,,
+rand_13,rand_36item_short_form_health_survey,,yesno,"During the PAST 4 WEEKS, have you had any of the following problems with your work or other regular daily activities as a result of your physical health? 
+
+13. Cut down the amount of time you spent on work or other activities
+",,,,,,,,y,LH,,,,
+rand_14,rand_36item_short_form_health_survey,,yesno,"During the PAST 4 WEEKS, have you had any of the following problems with your work or other regular daily activities as a result of your physical health?
+
+14. Accomplished less than you would like",,,,,,,,y,LH,,,,
+rand_15,rand_36item_short_form_health_survey,,yesno,"During the PAST 4 WEEKS, have you had any of the following problems with your work or other regular daily activities as a result of your physical health? 
+
+15. Were limited in the kind of work or other activities",,,,,,,,y,LH,,,,
+rand_16,rand_36item_short_form_health_survey,,yesno,"During the PAST 4 WEEKS, have you had any of the following problems with your work or other regular daily activities as a result of your physical health? 
+
+16. Had difficulty performing the work or other activities (for example, it took extra effort)",,,,,,,,y,LH,,,,
+rand_17,rand_36item_short_form_health_survey,,yesno,"During the PAST 4 WEEKS, have you had any of the following problems with your work or other regular daily activities as a result of any emotional problems (such as feeling depressed or anxious)? 
+
+17. Cut down the amount of time you spent on work or other activities",,,,,,,,y,LH,,,,
+rand_18,rand_36item_short_form_health_survey,,yesno,"During the PAST 4 WEEKS, have you had any of the following problems with your work or other regular daily activities as a result of any emotional problems (such as feeling depressed or anxious)? 
+
+18. Accomplished less than you would like",,,,,,,,y,LH,,,,
+rand_19,rand_36item_short_form_health_survey,,yesno,"During the PAST 4 WEEKS, have you had any of the following problems with your work or other regular daily activities as a result of any emotional problems (such as feeling depressed or anxious)? 
+
+19. Didn't do work or other activities as carefully as usual",,,,,,,,y,LH,,,,
+rand_20,rand_36item_short_form_health_survey,,radio,"20. During the PAST 4 WEEKS, to what extent has your physical health or emotional problems interfered with your normal social activities with family, friends, neighbors, or groups?","100, Not at all | 75, Slightly | 50, Moderately | 25, Quite a bit | 0, Extremely",,,,,,,y,LH,,,,
+rand_21,rand_36item_short_form_health_survey,,radio,21. How much bodily pain have you had during the PAST 4 WEEKS?,"100, None | 80, Very mild | 60, Mild | 40, Moderate | 20, Severe | 0, Very severe",,,,,,,y,LH,,,,
+rand_22,rand_36item_short_form_health_survey,,radio,"22. During the PAST 4 WEEKS, how much did pain interfere with your normal work (including both work outside the home and housework)?","100, Not at all | 75, A little bit | 50, Moderately | 25, Quite a bit | 0, Extremely",,,,,,,y,LH,,,,
+rand_23,rand_36item_short_form_health_survey,"<div class=""rich-text-field-label""><p>These questions are about how you feel and how things have been with you <u>during the past 4 weeks</u>. For each question, please give the one answer that comes closest to the way you have been feeling.<br /><br />How much of the time during the <u>past 4 weeks<u></u> ...</u></p></div>",radio,23. How much of the time during the PAST 4 WEEKS: Did you feel full of pep?,"100, All of the time | 80, Most of the time | 60, A good bit of the time | 40, Some of the time | 20, A little of the time | 0, None of the time",,,,,,,y,,,,,
+rand_24,rand_36item_short_form_health_survey,,radio,24. How much of the time during the PAST 4 WEEKS: Have you been a very nervous person?,"100, All of the time | 80, Most of the time | 60, A good bit of the time | 40, Some of the time | 20, A little of the time | 0, None of the time",,,,,,,y,,,,,
+rand_25,rand_36item_short_form_health_survey,,radio,25. How much of the time during the PAST 4 WEEKS: Have you felt so down in the dumps that nothing could cheer you up?,"100, All of the time | 80, Most of the time | 60, A good bit of the time | 40, Some of the time | 20, A little of the time | 0, None of the time",,,,,,,y,,,,,
+rand_26,rand_36item_short_form_health_survey,,radio,26. How much of the time during the PAST 4 WEEKS: Have you felt calm and peaceful?,"100, All of the time | 80, Most of the time | 60, A good bit of the time | 40, Some of the time | 20, A little of the time | 0, None of the time",,,,,,,y,,,,,
+rand_27,rand_36item_short_form_health_survey,,radio,27. How much of the time during the PAST 4 WEEKS: Did you have a lot of energy?,"100, All of the time | 80, Most of the time | 60, A good bit of the time | 40, Some of the time | 20, A little of the time | 0, None of the time",,,,,,,y,,,,,
+rand_28,rand_36item_short_form_health_survey,,radio,28. How much of the time during the PAST 4 WEEKS: Have you felt downhearted and blue?,"100, All of the time | 80, Most of the time | 60, A good bit of the time | 40, Some of the time | 20, A little of the time | 0, None of the time",,,,,,,y,,,,,
+rand_29,rand_36item_short_form_health_survey,,radio,29. How much of the time during the PAST 4 WEEKS: Did you feel worn out?,"100, All of the time | 80, Most of the time | 60, A good bit of the time | 40, Some of the time | 20, A little of the time | 0, None of the time",,,,,,,y,,,,,
+rand_30,rand_36item_short_form_health_survey,,radio,30. How much of the time during the PAST 4 WEEKS: Have you been a happy person?,"100, All of the time | 80, Most of the time | 60, A good bit of the time | 40, Some of the time | 20, A little of the time | 0, None of the time",,,,,,,y,,,,,
+rand_31,rand_36item_short_form_health_survey,,radio,31. How much of the time during the PAST 4 WEEKS: Did you feel tired?,"100, All of the time | 80, Most of the time | 60, A good bit of the time | 40, Some of the time | 20, A little of the time | 0, None of the time",,,,,,,y,,,,,
+rand_32,rand_36item_short_form_health_survey,,radio,"32. During the PAST 4 WEEKS, how much of the time has your physical health or emotional problems interfered with your social activities (like visiting with friends, relatives, etc.)?","0, All of the time | 25, Most of the time | 50, Some of the time | 75, A little of the time | 100, None of the time",,,,,,,y,,,,,
+rand_33,rand_36item_short_form_health_survey,,radio,33. How TRUE or FALSE is this statement for you: I seem to get sick a little easier than other people. ,"0, Definitely true | 25, Mostly true | 50, Don't know | 75, Mostly false | 100, Definitely false",,,,,,,y,LH,,,,
+rand_34,rand_36item_short_form_health_survey,,radio,34. How TRUE or FALSE is this statement for you: I am as healthy as anybody I know.,"100, Definitely true | 75, Mostly true | 50, Don't know | 25, Mostly false | 0, Definitely false",,,,,,,y,LH,,,,
+rand_35,rand_36item_short_form_health_survey,,radio,35. How TRUE or FALSE is this statement for you: I expect my health to get worse.,"0, Definitely true | 25, Mostly true | 50, Don't know | 75, Mostly false | 100, Definitely false",,,,,,,y,LH,,,,
+rand_36,rand_36item_short_form_health_survey,,radio,36. How TRUE or FALSE is this statement for you: My health is excellent.,"100, Definitely true | 75, Mostly true | 50, Don't know | 25, Mostly false | 0, Definitely false",,,,,,,y,LH,,,,
+rand36_ts,rand_36item_short_form_health_survey,,text,RAND36 Timestamp,,,,,,,,,,,,,@TODAY @HIDDEN
+rand36005_uuid,rand_36item_short_form_health_survey,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+rand36005_startdate,rand_36item_short_form_health_survey,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+rand36005_enddate,rand_36item_short_form_health_survey,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+rand36005_scheduledate,rand_36item_short_form_health_survey,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+rand36005_status,rand_36item_short_form_health_survey,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+rand36005_supplementaldata,rand_36item_short_form_health_survey,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+rand36005_serializedresult,rand_36item_short_form_health_survey,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+sam1,selfassessment_mannequin_sam,"<div class=""rich-text-field-label""><p>This survey asks about your mood, energy, stress, and cognition over the <span style=""text-decoration: underline;"">past 24 hours</span>. Please select the appropriate answer for each question.</p></div>",radio,1. How did you feel during your shift(s) at peak activity today?,"1, 😀 Very Positive | 2, 🙂 Positive | 3, 😐 Neutral | 4, 🙁 Negative | 5, 😥 Very Negative | 6, 😶 No Answer",,,,,,,y,LV,,,,
+sam2,selfassessment_mannequin_sam,,radio,"<div class=""rich-text-field-label""><p>2. How do you feel right now?</p></div>","1, 😀 Very Positive | 2, 🙂 Positive | 3, 😐 Neutral | 4, 🙁 Negative | 5, 😥 Very Negative | 6, 😶 No Answer",,,,,,,y,LV,,,,
+sam3,selfassessment_mannequin_sam,,radio,3. What was your energy like during your shift(s) at peak activity today?,"1, ⚡️⚡️ Very Energetic | 2, ⚡️     Energetic | 3, 〽️     Neutral | 4, 🥱     Low Energy | 5, 😴     Very Low Energy | 6, ⚪️     No Answer",,,,,,,y,LV,,,,
+sam4,selfassessment_mannequin_sam,,radio,4. How is your energy now?,"1, ⚡️⚡️ Very Energetic | 2, ⚡️     Energetic | 3, 〽️     Neutral | 4, 🥱     Low Energy | 5, 😴     Very Low Energy | 6, ⚪️     No Answer",,,,,,,y,LV,,,,
+sam5,selfassessment_mannequin_sam,,radio,5. What was your brain capable of performing during your shift(s) at peak activity today?,"1, All Complex Tasks 🧠💡💡💡💡 | 2, Some Complex Tasks 🧠💡💡💡 | 3, Moderate Tasks 🧠💡💡 | 4, All Simple Tasks 🧠💡 | 5, Some Simple Tasks 🧠 | 6, No Answer ⚪️",,,,,,,y,LV,,,,
+sam6,selfassessment_mannequin_sam,,radio,6. What is your brain capable of performing right now?,"1, All Complex Tasks 🧠💡💡💡💡 | 2, Some Complex Tasks 🧠💡💡💡 | 3, Moderate Tasks 🧠💡💡 | 4, All Simple Tasks 🧠💡 | 5, Some Simple Tasks 🧠 | 6, No Answer ⚪️",,,,,,,y,LV,,,,
+sam7,selfassessment_mannequin_sam,,radio,7. What was your stress level during your shift(s) today?,"1, 🌩 Very Stressed | 2, 🌧 Stressed | 3, ☁️ Neutral | 4, 🌥 Calm | 5, 🌤 Very Calm | 6, ⚪️ No Answer",,,,,,,y,LV,,,,
+sam8,selfassessment_mannequin_sam,,radio,8. What is your current stress level?,"1, 🌩 Very Stressed | 2, 🌧 Stressed | 3, ☁️ Neutral | 4, 🌥 Calm | 5, 🌤 Very Calm | 6, ⚪️ No Answer",,,,,,,y,LV,,,,
+sam_ts,selfassessment_mannequin_sam,,text,SAM Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+sam944_uuid,selfassessment_mannequin_sam,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+sam944_startdate,selfassessment_mannequin_sam,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+sam944_enddate,selfassessment_mannequin_sam,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+sam944_scheduledate,selfassessment_mannequin_sam,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+sam944_status,selfassessment_mannequin_sam,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+sam944_supplementaldata,selfassessment_mannequin_sam,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+sam944_serializedresult,selfassessment_mannequin_sam,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+sri_1,survey_response_inclination_sri,Please answer the following 2 questions using a scale from 0 to 100%:,slider,"1. When you are NOT feeling well, how likely are you to respond to surveys?",0% | 50% | 100%,,number,,,,,y,RH,,,,
+sri_2,survey_response_inclination_sri,,slider,"2. When you are feeling well, how likely are you to respond to surveys?",0% | 50% | 100%,,number,,,,,y,RH,,,,
+sri_ts,survey_response_inclination_sri,,text,Survey Response Inclination Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+sri159_uuid,survey_response_inclination_sri,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+sri159_startdate,survey_response_inclination_sri,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+sri159_enddate,survey_response_inclination_sri,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+sri159_scheduledate,survey_response_inclination_sri,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+sri159_status,survey_response_inclination_sri,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+sri159_supplementaldata,survey_response_inclination_sri,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+sri159_serializedresult,survey_response_inclination_sri,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+use_1,acceptabilitystudy_feedback,Please select the appropriate response to the following statements/questions regarding your experience in this study.,radio,"1. Overall, I am satisfied with my participation in the study.","1, Strongly disagree | 2, Somewhat disagree | 3, Neither agree nor disagree | 4, Somewhat agree | 5, Strongly agree",,,,,,,y,LV,,,,
+use_2,acceptabilitystudy_feedback,,radio,2. The onboarding process on the app went smoothly.,"1, Strongly disagree | 2, Somewhat disagree | 3, Neither agree nor disagree | 4, Somewhat agree | 5, Strongly agree",,,,,,,y,LV,,,,
+use_3,acceptabilitystudy_feedback,,radio,3. I understand how to use and sync the Oura ring.,"1, Strongly disagree | 2, Somewhat disagree | 3, Neither agree nor disagree | 4, Somewhat agree | 5, Strongly agree",,,,,,,y,LV,,,,
+use_4,acceptabilitystudy_feedback,,radio,4. The Oura ring is a device you would consider using regularly.,"1, Strongly disagree | 2, Somewhat disagree | 3, Neither agree nor disagree | 4, Somewhat agree | 5, Strongly agree",,,,,,,y,LV,,,,
+use_5,acceptabilitystudy_feedback,,radio,5. The amount of daily time it takes to participate in this study is reasonable.,"1, Strongly disagree | 2, Somewhat disagree | 3, Neither agree nor disagree | 4, Somewhat agree | 5, Strongly agree",,,,,,,y,LV,,,,
+use_6,acceptabilitystudy_feedback,,radio,6. What task did you like completing the least?,"1, Video diary | 2, Trail making test | 3, Reaction time task | 4, Spatial span memory test | 5, Cough app",,,,,,,y,LV,,,,
+use_7,acceptabilitystudy_feedback,,radio,"7. On days that you did not complete the surveys, what was your most common reason for not doing them?","1, Surveys arrived at a bad time / I didn't have time to complete them | 2, There were too many surveys | 3, The surveys made me uncomfortable | 4, I didn't feel comfortable answering surveys on the app | 5, Other | 6, I completed all the surveys",,,,,,,y,LV,,,,
+use_8,acceptabilitystudy_feedback,,radio,8. Were you more or less likely to respond when you didn't feel good?,"1, More likely | 2, Less likely | 3, About the same",,,,,,,y,LV,,,,
+use_9,acceptabilitystudy_feedback,,radio,"9. If and when you didn't record a video diary when prompted, what was your reason?","1, I didn't have time to complete it | 2, I felt weird / didn't know what to say | 3, I was concerned about my privacy | 4, Other | 5, I recorded all the video diaries",,,,,,,y,LV,,,,
+use_10,acceptabilitystudy_feedback,,radio,"<div class=""rich-text-field-label""><p>10. Were you more or less likely to record a video diary when you didn't feel good?</p></div>","1, More likely | 2, Less likely | 3, About the same",,,,,,,y,LV,,,,
+use_11,acceptabilitystudy_feedback,,radio,"11. If and when you didn't complete the cognitive active tasks (reaction time, spatial memory, and trail making tests), what was your reason?","1, I didn't have time to complete it | 2, The walk test is too strenuous | 3, I didn't feel comfortable doing this activity with the app and not in person | 4, Other | 5, I completed all the active tasks",,,,,,,y,LV,,,,
+use_12,acceptabilitystudy_feedback,,radio,"12. Were you more or less likely to complete cognitive active tasks (reaction time, spatial memory, and trail making tests) when you didn't feel good?","1, More likely | 2, Less likely | 3, About the same",,,,,,,y,LV,,,,
+use_13,acceptabilitystudy_feedback,,notes,13. What can we do to improve the study experience for future participants?,,,,,,,,y,LV,,,,
+use_14,acceptabilitystudy_feedback,,notes,14. What was your favorite feature of the study?,,,,,,,,y,LV,,,,
+use523_uuid,acceptabilitystudy_feedback,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+use523_startdate,acceptabilitystudy_feedback,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+use523_enddate,acceptabilitystudy_feedback,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+use523_scheduledate,acceptabilitystudy_feedback,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+use523_status,acceptabilitystudy_feedback,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+use523_supplementaldata,acceptabilitystudy_feedback,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+use523_serializedresult,acceptabilitystudy_feedback,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+rea_uuid,reaction_time_active_task,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+rea_startdate,reaction_time_active_task,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+rea_enddate,reaction_time_active_task,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+rea_scheduledate,reaction_time_active_task,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+rea_status,reaction_time_active_task,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+rea_supplementaldata,reaction_time_active_task,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+rea_serializedresult,reaction_time_active_task,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+rea_json,reaction_time_active_task,,notes,JSON,,,,,,,,,,,,,@MC-TASK-ACTIVE-REA
+spa_uuid,spatial_span_memory_test_active_task,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+spa_startdate,spatial_span_memory_test_active_task,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+spa_enddate,spatial_span_memory_test_active_task,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+spa_scheduledate,spatial_span_memory_test_active_task,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+spa_status,spatial_span_memory_test_active_task,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+spa_supplementaldata,spatial_span_memory_test_active_task,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+spa_serializedresult,spatial_span_memory_test_active_task,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+spa_json,spatial_span_memory_test_active_task,,notes,JSON,,,,,,,,,,,,,@MC-TASK-ACTIVE-SPA
+tra_uuid,trail_making_active_task,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+tra_startdate,trail_making_active_task,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+tra_enddate,trail_making_active_task,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+tra_scheduledate,trail_making_active_task,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+tra_status,trail_making_active_task,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+tra_supplementaldata,trail_making_active_task,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+tra_serializedresult,trail_making_active_task,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT
+tra_json,trail_making_active_task,,notes,JSON,,,,,,,,,,,,,@MC-TASK-ACTIVE-TRA
+ppe_change,ppe_and_exposure_scale,Please answer the following questions about the PAST 24 HOURS.,radio,Has anything changed in the past 24 hours related to your PPE use and exposure?,"0, No | 1, Yes | 2, Don't know or don't remember | 3, This is the first time I am filling out the PPE and Exposure Scale.",,,,,,,y,LV,,,,
+covid_past_24,ppe_and_exposure_scale,,yesno,"1. In the PAST 24 HOURS, did you interact with COVID+ or PUI patients?",,,,,,,[ppe_change] = '1' or [ppe_change] = '2' or [ppe_change] = '3',y,LH,,,,
+ppe_2,ppe_and_exposure_scale,,slider,"2. Over the PAST 24 HOURS, how adherent were you able to be to your facility recommendations on a scale from 0 to 100 where 50 indicates that you were able to do what was recommended?",Did less | Did what was recommended | Did more,,,,,,[covid_past_24] = '1',y,LH,,,,
+ppe_3,ppe_and_exposure_scale,,radio,"3. Over the PAST 24 HOURS, how often did you wear an N95 or equivalent mask?
+","1, Every patient contact | 2, Most patient contacts | 3, Some patient contacts | 4, Few patient contacts | 5, No patient contacts",,,,,,[covid_past_24] = '1',y,LV,,,,
+ppe_4,ppe_and_exposure_scale,,radio,"4. Over the PAST 24 HOURS, how often did you wear a face shield or eye protection?","1, Every patient contact | 2, Most patient contacts | 3, Some patient contacts | 4, Few patient contacts | 5, No patient contacts",,,,,,[covid_past_24] = '1',y,LV,,,,
+ppe_5,ppe_and_exposure_scale,,radio,"5. In your facility how long are you asked to wear the same N95 or equivalent mask, at the current time?","1, New mask per patient | 2, New mask per day | 3, New mask per few days | 4, New mask per week | 5, New mask over longer than a week | 6, No new masks | 7, No masks",,,,,,[covid_past_24] = '1',y,LV,,,,
+ppe_6,ppe_and_exposure_scale,,slider,"6. Over the PAST 24 HOURS, how much risk do you think you had from exposure to SARS-CoV-2?",Very little risk |  | A lot of risk,,,,,,[covid_past_24] = '1',y,LH,,,,
+ppe_ts,ppe_and_exposure_scale,,text,PPE and Exposure Timestamp,,,date_ymd,,,,,,,,,,@TODAY @HIDDEN
+ppe_uuid,ppe_and_exposure_scale,MyCap App Fields - Do Not Modify,text,UUID,,,,,,,,,,,,,@MC-TASK-UUID
+ppe_startdate,ppe_and_exposure_scale,,text,Start Date,,,,,,,,,,,,,@MC-TASK-STARTDATE
+ppe_enddate,ppe_and_exposure_scale,,text,End Date,,,,,,,,,,,,,@MC-TASK-ENDDATE
+ppe_scheduledate,ppe_and_exposure_scale,,text,Schedule Date,,,,,,,,,,,,,@MC-TASK-SCHEDULEDATE
+ppe_status,ppe_and_exposure_scale,,dropdown,Status,"0, Deleted | 1, Completed | 2, Incomplete",,,,,,,,,,,,@MC-TASK-STATUS
+ppe_supplementaldata,ppe_and_exposure_scale,,notes,Supplemental Data (JSON),,,,,,,,,,,,,@MC-TASK-SUPPLEMENTALDATA
+ppe_serializedresult,ppe_and_exposure_scale,,file,Serailized Result,,,,,,,,,,,,,@MC-TASK-SERIALIZEDRESULT

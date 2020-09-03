@@ -1,0 +1,23 @@
+record_id,redcap_repeat_instrument,redcap_repeat_instance,tra_uuid,tra_startdate,tra_enddate,tra_status,tra_supplementaldata,tra_serializedresult,tra_json,trail_making_active_task_complete,participant_id
+1,trail_making_active_task,1,C18BB844-A544-4735-98EF-7C6CC6110024,2020-06-03 12:48:40,2020-06-03 12:51:41,1,"{
+  ""deviceplatform"" : ""iOS"",
+  ""devicemanufacturer"" : ""Apple"",
+  ""configversion"" : ""16"",
+  ""devicemodel"" : ""iPhone"",
+  ""appversion"" : ""2.8.0"",
+  ""percentComplete"" : ""100"",
+  ""deviceuuid"" : ""F65010C6-271C-4C13-8C98-E223BA95A294"",
+  ""deviceversion"" : ""13.4.1"",
+  ""syncdate"" : ""2020-06-03 12:51:41""
+}",[document],"{""taps"":[{""incorrect"":""false"",""index"":""0"",""timestamp"":""1.8278800249099731""},{""index"":""0"",""incorrect"":""true"",""timestamp"":""4.623434066772461""},{""incorrect"":""false"",""index"":""1"",""timestamp"":""6.002727031707764""},{""index"":""2"",""incorrect"":""false"",""timestamp"":""7.527499079704285""},{""timestamp"":""8.043025016784668"",""index"":""3"",""incorrect"":""false""},{""timestamp"":""9.276126027107239"",""index"":""4"",""incorrect"":""false""},{""incorrect"":""false"",""index"":""5"",""timestamp"":""10.960206031799316""},{""index"":""6"",""incorrect"":""false"",""timestamp"":""11.843021988868713""},{""index"":""7"",""incorrect"":""false"",""timestamp"":""13.443547010421753""},{""timestamp"":""14.117905020713806"",""incorrect"":""false"",""index"":""8""},{""timestamp"":""15.532339096069336"",""index"":""9"",""incorrect"":""false""},{""index"":""10"",""incorrect"":""false"",""timestamp"":""16.142634987831116""},{""timestamp"":""17.966150999069214"",""incorrect"":""false"",""index"":""11""},{""incorrect"":""false"",""index"":""12"",""timestamp"":""18.542171001434326""}],""numberOfErrors"":""1""}",0,U-ED8U66WDPNSTAJ81Y4V8
+8,trail_making_active_task,1,1114F073-4899-4D3B-98EC-B9BFDB1394EE,2020-06-03 10:26:26,2020-06-03 10:26:46,1,"{
+  ""devicemanufacturer"" : ""Apple"",
+  ""devicemodel"" : ""iPhone"",
+  ""deviceuuid"" : ""FA99CDE6-5BD9-48F6-82F9-59250BAB4655"",
+  ""syncdate"" : ""2020-06-03 10:26:46"",
+  ""deviceversion"" : ""13.3"",
+  ""deviceplatform"" : ""iOS"",
+  ""percentComplete"" : ""100"",
+  ""configversion"" : ""16"",
+  ""appversion"" : ""2.8.0""
+}",[document],"{""numberOfErrors"":""1"",""taps"":[{""index"":""0"",""timestamp"":""1.2054439783096313"",""incorrect"":""false""},{""index"":""0"",""timestamp"":""1.8391859531402588"",""incorrect"":""true""},{""incorrect"":""false"",""timestamp"":""4.822744011878967"",""index"":""1""},{""incorrect"":""false"",""timestamp"":""5.439237952232361"",""index"":""2""},{""index"":""3"",""timestamp"":""5.90530800819397"",""incorrect"":""false""},{""index"":""4"",""incorrect"":""false"",""timestamp"":""6.589779019355774""},{""incorrect"":""false"",""timestamp"":""7.455989956855774"",""index"":""5""},{""index"":""6"",""incorrect"":""false"",""timestamp"":""7.739861965179443""},{""index"":""7"",""timestamp"":""8.456622958183289"",""incorrect"":""false""},{""timestamp"":""8.788998007774353"",""index"":""8"",""incorrect"":""false""},{""timestamp"":""9.307101964950562"",""index"":""9"",""incorrect"":""false""},{""timestamp"":""9.690448999404907"",""index"":""10"",""incorrect"":""false""},{""timestamp"":""10.040055990219116"",""index"":""11"",""incorrect"":""false""},{""timestamp"":""10.388932943344116"",""index"":""12"",""incorrect"":""false""}]}",0,U-6NYT9428U5XVMF376JR2

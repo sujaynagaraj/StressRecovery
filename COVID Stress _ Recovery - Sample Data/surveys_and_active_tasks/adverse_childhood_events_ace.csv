@@ -1,0 +1,12 @@
+record_id,redcap_repeat_instrument,redcap_repeat_instance,ace_1,ace_2,ace_3,ace_4,ace_5,ace_6,ace_7,ace_8,ace_9,ace_10,ace485_uuid,ace485_startdate,ace485_enddate,ace485_status,ace485_supplementaldata,ace485_serializedresult,adverse_childhood_events_ace_complete,participant_id
+8,adverse_childhood_events_ace,1,0,0,0,0,0,0,0,0,0,0,4D397D3C-A2F1-4AB0-8505-2626A3EFA0E7,2020-06-03 10:25:06,2020-06-03 10:25:30,1,"{
+  ""appversion"" : ""2.8.0"",
+  ""deviceuuid"" : ""FA99CDE6-5BD9-48F6-82F9-59250BAB4655"",
+  ""percentComplete"" : ""100"",
+  ""devicemodel"" : ""iPhone"",
+  ""configversion"" : ""16"",
+  ""devicemanufacturer"" : ""Apple"",
+  ""syncdate"" : ""2020-06-03 10:25:31"",
+  ""deviceversion"" : ""13.3"",
+  ""deviceplatform"" : ""iOS""
+}",[document],0,U-6NYT9428U5XVMF376JR2

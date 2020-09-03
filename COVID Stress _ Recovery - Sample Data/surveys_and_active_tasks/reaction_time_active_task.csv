@@ -1,0 +1,12 @@
+record_id,redcap_repeat_instrument,redcap_repeat_instance,rea_uuid,rea_startdate,rea_enddate,rea_status,rea_supplementaldata,rea_serializedresult,rea_json,reaction_time_active_task_complete,participant_id
+3,reaction_time_active_task,1,7EB6B91F-E5D1-4E94-9153-667239D4C257,2020-05-08 17:49:50,2020-05-08 17:50:19,1,"{
+  ""devicemanufacturer"" : ""Apple"",
+  ""devicemodel"" : ""iPhone"",
+  ""deviceuuid"" : ""0E2AB233-F1EC-4D1F-B7D4-3FBF3A493AA9"",
+  ""percentComplete"" : ""100"",
+  ""deviceversion"" : ""13.3.1"",
+  ""syncdate"" : ""2020-05-08 17:50:19"",
+  ""deviceplatform"" : ""iOS"",
+  ""configversion"" : ""15"",
+  ""appversion"" : ""2.8.0""
+}",[document],"{""timestamp"":""114987.51633154167"",""fileResult"":{""contentType"":""application\/json"",""fileURL"":""""}}",0,U-1WKSTF3855YRJ4SG5YTC
