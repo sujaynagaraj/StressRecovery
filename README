@@ -1,0 +1,11 @@
+required:
+python 3
+
+python packages:
+pandas, json, matplotlib.pyplot, fitparse
+
+to plot Garmin Data
+1) clone repo
+2) add your personal data file to the repo. rename this file to "garmin_data"
+3) to plot a .FIT file, go to line 66 of the notebook
+4) replace filename variable with the name of the .FIT file you want to plot (will require some trial and error, not all will have relevant HR data)
