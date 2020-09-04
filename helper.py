@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import fitparse
 
 path = "COVID Stress _ Recovery - Sample Data/oura/"
 

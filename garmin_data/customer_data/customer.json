@@ -16,14 +16,14 @@
     "primary" : true,
     "emailVerified" : false,
     "emailVerificationTimestamp" : null,
-    "emailAddressId" : "8fdd5243-6491-4863-80cd-13c577683166"
+    "emailAddressId" : "31406c34-ed3e-4397-96dc-f394fb0059c2"
   },
   "primaryPhoneNumber" : null,
   "locale" : "en_US",
   "type" : null,
   "active" : true,
-  "version" : 11,
-  "lastUpdateDateTime" : "2020-09-03T00:43:22Z",
+  "version" : 14,
+  "lastUpdateDateTime" : "2020-09-03T22:30:39Z",
   "createdDate" : "2020-08-27T16:32:27Z",
   "customerLocation" : {
     "countryCode" : "CA",
